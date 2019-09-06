@@ -1,0 +1,87 @@
+<html>
+<head>
+  <title>Repaso de los primeros 3 temas</title>
+  <link rel='stylesheet'href='CSS/Conceptos.css'>
+</head>
+<body>
+  <table id='Grid'>
+    <!--This is the part of the grid containing the heading-->
+      <tr id ='Heading'>
+        <th colspan="2" class ="Ah">
+          <h1>Conceptos Basicos</h1>
+          </th>
+        </tr>
+      <tr id='r2'><td colspan='2' class ='An'>
+        <div id= 'navBar'>
+          	<ul>
+               <li><a class='navButton'href='Introduccion.html'>Introduccion</a></li>
+               <li><a class='navButton'href='Conceptos.html'>Conceptos Basicos</a></li>
+               <li><a class='navButton' href='ElVdelTemp.html'>El Valor del Dinero en el Tiempo</a></li>
+               <li><a class='navButton' href='Presupuesto.html'>Presupuesto Personal</a></li>
+
+  		        </ul>
+        </div>
+        </td></tr>
+    <!--End of Grid heading and start of Grid Body-->
+      <!--The Grid will be created with 4-5 rows in collum A and 1 row in collum B-->
+      <tr id='r3'>
+        <!--To keep the desing simple I embeded a table using 5 rows on 1 collum-->
+      <div id='Buttons'>
+        <td class ='A1'>
+          <table id="ButtonGrid">
+            <tr id='BtnA1'>
+              <td class='btn' onclick="tema1()">Inflacion</td>
+            </tr>
+            <tr id='BtnA2'>
+              <td class='btn' onclick='tema2()'>Tasa de Interes</td>
+            </tr>
+            <tr id='BtnA3'>
+              <td class='btn' onclick = 'tema3()'>Tasa de Cambio</td>
+            </tr>
+            <tr id='BtnA4'>
+              <td class='btn' onclick='tema4()'>Ahorro vs Consumo</td>
+            </tr>
+            <tr id='BtnA5'>
+              <td class='btn' onclick = 'tema5()'>Riesgo-Rendimiento</td>
+            </tr>
+          </table>
+        </td>
+      </div>
+      <!--This is the part of the Grid containing the slideshow-->
+        <td id='DisplayGrid'>
+          <table id="ADisplayGrid">
+            <tr>
+              <th id=DisplayHeading>
+                Introduccion al Tema
+              </th>
+            </tr>
+            <tr>
+              <td id='ActualDisplay'>
+                <table id='SlideShowGrid'>
+            			<tr>
+            				<td id='a1'>
+                      <h2 id='Displayh2'>Temas</h2>
+                      <p id='Displayp'></p>
+                      <ul id='Displayul'>
+                        <li>Inflacion</li>
+                        <li>Tasa de Interes</li>
+                        <li>Tipo de Cambio</li>
+                        <li>Ahorro vs Consumo</li>
+                        <li>Riesgo-Rendimiento</li>
+                      </ul>
+                    </td>
+            				<td id='b1'>
+                      <img id='b1IMG' src="Images/Powell.jpg" alt="portada">
+                    </td>
+            			</tr>
+            		</table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+  </table>
+  <script src="JavaScript/Conceptos.js"></script>
+</body>
+</html>
